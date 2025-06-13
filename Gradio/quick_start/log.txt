@@ -1,0 +1,11 @@
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Traceback (most recent call last):
+  File "gradio_makeup_transfer.py", line 11, in <module>
+    import CSD_MT_eval  # 내부에 makeup_transfer256 함수가 있음
+  File "C:\Users\kimjihoon\Desktop\gradio\CSD-MT-main\quick_start\CSD_MT_eval.py", line 12, in <module>
+    from color_page_filtering import (
+  File "C:\Users\kimjihoon\Desktop\gradio\CSD-MT-main\quick_start\color_page_filtering.py", line 453, in <module>
+    price_f    = gr.Slider(
+  File "C:\Users\kimjihoon\anaconda3\envs\CSDMT\lib\site-packages\gradio\component_meta.py", line 167, in wrapper
+    return fn(self, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'type'

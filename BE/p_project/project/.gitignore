@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.log
+inputs/
+results/
+weights/
+*.pth
+.venv/
+.idea/
