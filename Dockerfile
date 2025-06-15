@@ -22,4 +22,4 @@ RUN wget https://github.com/Kitware/CMake/releases/download/v3.26.4/cmake-3.26.4
     cmake --version
 
 # dlib 설치
-RUN pip install dlib==19.24.2
+RUN pip install dlib
