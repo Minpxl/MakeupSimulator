@@ -20,8 +20,14 @@ RUN wget https://github.com/Kitware/CMake/releases/download/v3.26.4/cmake-3.26.4
     mv cmake-3.26.4-linux-x86_64 /opt/cmake && \
     ln -sf /opt/cmake/bin/* /usr/local/bin/ && \
     cmake --version
+# Clone and build dlib manually
+RUN git clone --branch v19.24 --depth 1 https://github.com/davisking/dlib.git /opt/dlib && \
+    cd /opt/dlib && \
+    mkdir build && cd build && \
+    cmake .. && \
+    cmake --build . && \
+    cd ../ && \
+    python3 setup.py install
 
-# dlib 설치
-RUN pip install dlib==19.24.2
 
 RUN which cmake && cmake --version
