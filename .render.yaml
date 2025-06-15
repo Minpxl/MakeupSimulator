@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: your-gradio-app
+    env: docker
+    plan: free
+    autoDeploy: true
+    ports: 
+      - 7860
