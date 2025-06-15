@@ -25,9 +25,10 @@ RUN git clone --branch v19.24 --depth 1 https://github.com/davisking/dlib.git /o
     cd /opt/dlib && \
     mkdir build && cd build && \
     cmake .. && \
-    cmake --build . && \
+    cmake --build . -- -j$(nproc) && \
     cd ../ && \
     python3 setup.py install
+
 
 
 RUN which cmake && cmake --version
