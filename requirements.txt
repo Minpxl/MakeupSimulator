@@ -4,3 +4,5 @@ numpy
 opencv-python==4.1.2.30
 imageio==2.9.0
 gradio
+cmake
+dlib==19.24.2
